@@ -17,7 +17,7 @@ CREATE TABLE `admins` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `admins` (`id`, `email`, `password`, `created_at`, `updated_at`) VALUES
-(1,	'vishal@gmail.com',	'$2y$10$nmRcN2K1yHlWmKOuonTlOuJTm.TcvDjR3aF3Z1XYwBxKRAzBqkvrm',	'2021-01-15 15:57:18',	'2021-01-16 11:06:21');
+(1,	'panditgourav@gmail.com',	'$2y$10$nmRcN2K1yHlWmKOuonTlOuJTm.TcvDjR3aF3Z1XYwBxKRAzBqkvrm',	'2021-01-15 15:57:18',	'2021-01-16 11:06:21');
 
 DROP TABLE IF EXISTS `brands`;
 CREATE TABLE `brands` (
@@ -135,9 +135,9 @@ CREATE TABLE `customers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `customers` (`id`, `name`, `email`, `mobile`, `password`, `address`, `city`, `state`, `zip`, `company`, `gstin`, `status`, `is_verify`, `is_forgot_password`, `rand_id`, `created_at`, `updated_at`) VALUES
-(1,	'Vishal Gupta',	'vishal@gmail.com',	'9999999999',	'vishal',	'Address1',	'Delhi',	'Delhi',	'111111',	'My Company Name',	'ABCDEGGST',	0,	0,	0,	'',	'2021-02-08 08:14:02',	'2021-02-08 03:16:54'),
-(8,	'Vishal',	'learnweblessons@gmail.com',	'9999999999',	'eyJpdiI6IlpFVW5ZenFmWUxQOHEvWC90TlhreXc9PSIsInZhbHVlIjoid1RBa1lWbEl4WGF1QjlsV1ZtMnB5QT09IiwibWFjIjoiZTUwOWU0MDYxNGQ3MjZhMmQ5OWZkMGE2Njc1Yjc1MGI5ZThkODFlNjNiMmUzN2Y5ZmI5NTgyNWQ1N2FhOTRkZCJ9',	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	1,	1,	1,	'302653259',	'2021-03-12 03:09:52',	'2021-03-12 03:09:52'),
-(15,	'Amit Gupta',	'phpvishal@gmail.com',	'9999999999',	'eyJpdiI6IlpFVW5ZenFmWUxQOHEvWC90TlhreXc9PSIsInZhbHVlIjoid1RBa1lWbEl4WGF1QjlsV1ZtMnB5QT09IiwibWFjIjoiZTUwOWU0MDYxNGQ3MjZhMmQ5OWZkMGE2Njc1Yjc1MGI5ZThkODFlNjNiMmUzN2Y5ZmI5NTgyNWQ1N2FhOTRkZCJ9',	'test',	'asd',	'asd',	'4534545345',	NULL,	NULL,	1,	1,	0,	'165808257',	'2021-04-23 03:16:10',	'2021-04-23 03:16:10');
+(1,	'GOURAV PANDIT',	'pandit12gourav@gmail.com',	'1111111111',	'eyJpdiI6IlpFVW5ZenFmWUxQOHEvWC90TlhreXc9PSIsInZhbHVlIjoid1RBa1lWbEl4WGF1QjlsV1ZtMnB5QT09IiwibWFjIjoiZTUwOWU0MDYxNGQ3MjZhMmQ5OWZkMGE2Njc1Yjc1MGI5ZThkODFlNjNiMmUzN2Y5ZmI5NTgyNWQ1N2FhOTRkZCJ9',	'Address1',	'Delhi',	'Delhi',	'111111',	'My Company Name',	'ABCDEGGST',	0,	0,	0,	'',	'2021-02-08 08:14:02',	'2021-02-08 03:16:54'),
+(8,	'ASHWANI KUMAR',	'ashwanikumar@gmail.com',	'2222222222',	'eyJpdiI6IlpFVW5ZenFmWUxQOHEvWC90TlhreXc9PSIsInZhbHVlIjoid1RBa1lWbEl4WGF1QjlsV1ZtMnB5QT09IiwibWFjIjoiZTUwOWU0MDYxNGQ3MjZhMmQ5OWZkMGE2Njc1Yjc1MGI5ZThkODFlNjNiMmUzN2Y5ZmI5NTgyNWQ1N2FhOTRkZCJ9',	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	1,	1,	1,	'302653259',	'2021-03-12 03:09:52',	'2021-03-12 03:09:52'),
+(15,	'VIRAT KHOLI',	'viratkohli@gmail.com',	'3333333333',	'eyJpdiI6IlpFVW5ZenFmWUxQOHEvWC90TlhreXc9PSIsInZhbHVlIjoid1RBa1lWbEl4WGF1QjlsV1ZtMnB5QT09IiwibWFjIjoiZTUwOWU0MDYxNGQ3MjZhMmQ5OWZkMGE2Njc1Yjc1MGI5ZThkODFlNjNiMmUzN2Y5ZmI5NTgyNWQ1N2FhOTRkZCJ9',	'test',	'asd',	'asd',	'4534545345',	NULL,	NULL,	1,	1,	0,	'165808257',	'2021-04-23 03:16:10',	'2021-04-23 03:16:10');
 
 DROP TABLE IF EXISTS `home_banners`;
 CREATE TABLE `home_banners` (
@@ -201,8 +201,8 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO `orders` (`id`, `customers_id`, `name`, `email`, `mobile`, `address`, `city`, `state`, `pincode`, `coupon_code`, `coupon_value`, `order_status`, `payment_type`, `payment_status`, `payment_id`, `txn_id`, `total_amt`, `track_details`, `added_on`) VALUES
-(1,	8,	'Vishal',	'learnweblessons@gmail.com',	'9999999999',	'111- Block A',	'Noida',	'UP',	'110076',	'Jan2021',	140,	2,	'COD',	'Pending',	NULL,	NULL,	2431,	'Reached Noida',	'2021-04-28 02:06:48'),
-(4,	9,	'Vishal',	'learnweblessons@gmail.com',	'9999999999',	'321, A Block',	'Noida',	'UP',	'110076',	NULL,	0,	1,	'Gateway',	'Success',	'MOJO1428605A42955789',	'f603950d38354bd2a72cb75b20d11fc3',	2997,	'On the way',	'2021-04-28 02:09:23');
+(1,	8,	'GOURAV',	'GOURAVPANDIT1212@gmail.com',	'9999999999',	'111- Block A',	'Noida',	'UP',	'110076',	'Jan2021',	140,	2,	'COD',	'Pending',	NULL,	NULL,	2431,	'Reached Noida',	'2021-04-28 02:06:48'),
+(4,	9,	'ASHWANI',	'ASHWANI1212PANDIT@gmail.com',	'9999999999',	'321, A Block',	'Noida',	'UP',	'110076',	NULL,	0,	1,	'Gateway',	'Success',	'MOJO1428605A42955789',	'f603950d38354bd2a72cb75b20d11fc3',	2997,	'On the way',	'2021-04-28 02:09:23');
 
 DROP TABLE IF EXISTS `orders_details`;
 CREATE TABLE `orders_details` (

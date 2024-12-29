@@ -1,3 +1,42 @@
+# Laravel E-Commerce Website
+
+## Overview
+
+This project is a fully functional e-commerce website built with Laravel. It features an admin panel for managing the platform and a client-facing website for customers to browse and purchase products. The application is scalable, secure, and easy to customize.
+
+## Features
+
+### Admin Panel
+- **User Management**: Manage admin and customer accounts (CRUD operations).
+- **Product Management**: Add, update, delete, and categorize products with images.
+- **Category Management**: Create and manage product categories.
+- **Order Management**: View and update order statuses (e.g., pending, shipped, completed).
+- **Discounts & Coupons**: Add and manage discount codes for promotions.
+- **Reports & Analytics**: View sales reports and analytics (daily, weekly, monthly).
+- **Content Management**: Manage banners, pages (e.g., About Us, Contact), and site settings.
+
+### Client Side
+- **Product Browsing**: Search, filter, and sort products by price, category, and rating.
+- **Product Details**: View detailed product descriptions, images, and reviews.
+- **Shopping Cart**: Add, update, or remove items from the cart.
+- **Checkout**: Place orders with secure payment integration (e.g., Stripe, PayPal).
+- **Order Tracking**: Check the status and details of orders.
+- **User Accounts**: Register, log in, and manage profile details.
+- **Wishlist**: Save favorite products for future purchases.
+- **Reviews & Ratings**: Leave and view product reviews and ratings.
+- **Email Notifications**: Receive order confirmations and updates.
+- **Responsive Design**: Fully responsive for mobile, tablet, and desktop.
+
+## Tech Stack
+- **Backend**: Laravel (PHP Framework)
+- **Frontend**: Blade Templates, Bootstrap, JavaScript
+- **Database**: MySQL
+- **Payment Integration**: INSTAMOJO
+- **Authentication**: Laravel Jetstream
+- **Deployment**: Docker, AWS, or VPS (e.g., DigitalOcean)
+
+## Installation
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
